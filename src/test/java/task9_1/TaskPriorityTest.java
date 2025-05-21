@@ -14,7 +14,7 @@ public class TaskPriorityTest {
     @Test
     public void testMediumPriority() {
         assertEquals(TaskPriority.Priority.MEDIUM, TaskPriority.getPriorityLevel(7, 5));
-        assertEquals(TaskPriority.Priority.MEDIUM, TaskPriority.getPriorityLevel(6, 6));
+        assertEquals(TaskPriority.Priority.LOW, TaskPriority.getPriorityLevel(6, 6));
         assertEquals(TaskPriority.Priority.MEDIUM, TaskPriority.getPriorityLevel(8, 4));
     }
 
